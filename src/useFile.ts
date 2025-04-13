@@ -61,7 +61,7 @@ export function useFile () {
     return internalFile.value?.type
   })
 
-  return reactive({
+  return {
     storing,
     file,
     store,
@@ -70,5 +70,5 @@ export function useFile () {
     id,
     name,
     type,
-  })
+  }
 }
